@@ -10,15 +10,23 @@
 
 <body>
     <h1>Add a 'to do' item:</h1>
-    <form>
+    <form method="POST" action="add">
         <div>
-            <p></p>
+            <p>
+                <label for="id_name">Name: </label>
+                <input type="text" name="item_name" id="id_name">
+            </p>
         </div>
         <div>
-            <p></p>
+            <p>
+                <label for="id_done">Done: </label>
+                <input type="checkbox" name="done" id="id_done">
+            </p>
         </div>
         <div>
-            <button></button>
+            <p>
+                <button type="submit">Add item</button>
+            </p>
         </div>
     </form>
 
